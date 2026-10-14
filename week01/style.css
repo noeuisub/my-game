@@ -1,0 +1,250 @@
+:root {
+  color-scheme: dark;
+  font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  background: #080d16;
+  color: #e5edf7;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 64px 24px 28px;
+  background-color: #080d16;
+  background-image:
+    linear-gradient(rgb(53 77 104 / 12%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(53 77 104 / 12%) 1px, transparent 1px),
+    radial-gradient(ellipse at 50% 0, #14263a 0, transparent 62%);
+  background-size: 36px 36px, 36px 36px, auto;
+}
+
+.profile {
+  width: min(100%, 760px);
+  margin: 0 auto;
+  padding: clamp(28px, 7vw, 64px);
+  border: 1px solid #26364a;
+  border-radius: 20px;
+  background: rgb(12 19 30 / 94%);
+  box-shadow: 0 24px 80px rgb(0 0 0 / 38%);
+}
+
+.intro {
+  margin-bottom: 48px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #26364a;
+}
+
+.eyebrow,
+.code-note,
+.section-number,
+.page-footer {
+  font-family: "Cascadia Code", "Consolas", monospace;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: #93a4b8;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+
+.prompt-mark,
+.name-mark {
+  color: #5ee0b5;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 12px;
+  color: #f1f6fc;
+  font-size: clamp(3.25rem, 10vw, 5.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.06em;
+}
+
+.tagline {
+  margin-bottom: 14px;
+  color: #c3d2e3;
+  font-size: clamp(1.25rem, 4vw, 1.65rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.code-note {
+  margin-bottom: 0;
+  color: #8496aa;
+  font-size: 0.9rem;
+}
+
+.code-note span {
+  color: #5ee0b5;
+}
+
+.games {
+  margin-bottom: 42px;
+}
+
+.section-heading {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.section-number {
+  padding-top: 5px;
+  color: #5ee0b5;
+  font-size: 0.85rem;
+}
+
+h2 {
+  margin-bottom: 6px;
+  color: #e5edf7;
+  font-size: 1.45rem;
+  letter-spacing: -0.03em;
+}
+
+.games-hint {
+  margin-bottom: 0;
+  color: #91a1b5;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.game-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.game-button {
+  width: 100%;
+  padding: 15px 18px;
+  border: 1px solid #2a3a4e;
+  border-radius: 10px;
+  background: #111d2b;
+  color: #dce7f3;
+  font: inherit;
+  font-size: 1.05rem;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.game-button:hover,
+.game-button:focus-visible {
+  border-color: #5ee0b5;
+  outline: none;
+  transform: translateX(4px);
+}
+
+.game-button[aria-pressed="true"] {
+  border-color: #5ee0b5;
+  background: #12352f;
+  color: #8af0ce;
+}
+
+.selection-message {
+  min-height: 1.5em;
+  margin: 14px 0 0;
+  color: #8af0ce;
+  font-size: 0.95rem;
+}
+
+.idea {
+  padding-top: 32px;
+  border-top: 1px solid #26364a;
+}
+
+.idea-list {
+  display: grid;
+  gap: 14px;
+}
+
+.idea-card {
+  padding: 20px;
+  border: 1px solid #2a3a4e;
+  border-radius: 10px;
+  background: #0b131f;
+}
+
+.idea-card h3 {
+  margin: 0 0 16px;
+  color: #8af0ce;
+  font-size: 1.15rem;
+}
+
+.idea-card dl,
+.idea-card dd {
+  margin: 0;
+}
+
+.idea-card dl {
+  display: grid;
+  gap: 12px;
+}
+
+.idea-card dl div {
+  display: grid;
+  grid-template-columns: minmax(132px, 0.8fr) 2fr;
+  gap: 12px;
+}
+
+.idea-card dt {
+  color: #91a1b5;
+  font-size: 0.9rem;
+}
+
+.idea-card dd {
+  color: #dce7f3;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.page-footer {
+  margin-top: 24px;
+  color: #8496aa;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.page-footer p {
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 28px 14px 20px;
+  }
+
+  .profile {
+    border-radius: 15px;
+  }
+
+  .idea-card dl div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

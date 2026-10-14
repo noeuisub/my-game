@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <title>노의섭 | 생각하는 프로그래머</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="profile">
+    <header class="intro">
+      <p class="eyebrow"><span class="prompt-mark">&gt;</span> 안녕하세요, 저는</p>
+      <h1>노의섭<span class="name-mark">.</span></h1>
+      <p class="tagline">생각하는 프로그래머</p>
+      <p class="code-note"><span aria-hidden="true">//</span> 아이디어를 코드로 만드는 중</p>
+    </header>
+
+    <section class="games" aria-labelledby="games-title">
+      <div class="section-heading">
+        <span class="section-number">01</span>
+        <div>
+          <h2 id="games-title">좋아하는 게임</h2>
+          <p class="games-hint">관심 있는 게임을 눌러 보세요.</p>
+        </div>
+      </div>
+      <ul class="game-list">
+        <li><button class="game-button" type="button">마인크래프트</button></li>
+        <li><button class="game-button" type="button">리그 오브 레전드</button></li>
+        <li><button class="game-button" type="button">젤다의 전설</button></li>
+      </ul>
+      <p class="selection-message" aria-live="polite"></p>
+    </section>
+
+    <section class="idea" aria-labelledby="idea-title">
+      <div class="section-heading">
+        <span class="section-number">02</span>
+        <div>
+          <h2 id="idea-title">만든 게임 아이디어</h2>
+          <p class="games-hint">10주 안에 만들 수 있는 게임 후보 세 가지</p>
+        </div>
+      </div>
+      <div class="idea-list">
+        <article class="idea-card">
+          <h3>무한열차</h3>
+          <dl>
+            <div><dt>한 줄 설명</dt><dd>2D 한 화면에서 혼자 열차를 몰아 목적지 없이 달리는 게임</dd></div>
+            <div><dt>플레이어가 하는 일</dt><dd>좌우 방향키로 열차를 움직여 장애물을 피하고 앞으로 나아간다</dd></div>
+            <div><dt>게임이 끝나는 조건</dt><dd>목숨 3개를 모두 잃으면 게임 오버</dd></div>
+          </dl>
+        </article>
+        <article class="idea-card">
+          <h3>픽셀 정원 지키기</h3>
+          <dl>
+            <div><dt>한 줄 설명</dt><dd>한 화면의 2D 정원에서 혼자 잡초를 뽑아 꽃을 지키는 게임</dd></div>
+            <div><dt>플레이어가 하는 일</dt><dd>화면에 보이는 잡초를 마우스로 눌러 하나씩 뽑는다</dd></div>
+            <div><dt>게임이 끝나는 조건</dt><dd>정원의 잡초를 모두 뽑으면 승리</dd></div>
+          </dl>
+        </article>
+        <article class="idea-card">
+          <h3>별 조각 모으기</h3>
+          <dl>
+            <div><dt>한 줄 설명</dt><dd>한 화면의 2D 밤하늘에서 혼자 별 조각을 모으는 게임</dd></div>
+            <div><dt>플레이어가 하는 일</dt><dd>좌우 방향키로 캐릭터를 움직여 별을 받고 운석을 피한다</dd></div>
+            <div><dt>게임이 끝나는 조건</dt><dd>별 10개를 모으면 승리하고, 운석에 3번 맞으면 게임 오버</dd></div>
+          </dl>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <p>오늘 날짜: <time id="today-date"></time></p>
+  </footer>
+</body>
+</html>
